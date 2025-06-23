@@ -1,0 +1,47 @@
+{% include 'header.html' %}
+<!-- Page Header-->
+<header
+  class="masthead"
+  style="background-image: url('{{ post.image_url }}')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="post-heading">
+          <h1>{{ post.title }}</h1>
+          <h2 class="subheading">{{ post.subtitle }}</h2>
+          <span class="meta">
+            Posted by
+            <a href="https://panda-productions.vercel.app/"
+              >Panda Productions</a
+            >
+            on {{ time }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Post Content-->
+<article class="mb-4">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <h2 class="section-heading">Bamboo Blogs Digest: A Mashup of Ideas & Discoveries</h2>
+        <p>
+            This post is a collection of my ideas and inspiration gathered from various sources across the internet. Whether it's design concepts, coding snippets, or just random thoughts, I’ve compiled them here to share with you. If you enjoy this kind of content, consider subscribing to Bamboo Blogs for weekly posts filled with fresh insights, tutorials, and creative musings.
+        </p>
+        <h2 class="section-heading">{{ post.title }}</h2>
+        <p>
+          {{ post.body }}
+        </p>
+        <h2 class="section-heading">Disclaimer: This Is Just How I See It</h2>
+        <p>
+            Everything in this post is subjective—it reflects my perspective, experiences, and interpretations. While I’ve done my best to provide useful and accurate information, further research or reference may be needed depending on your needs. This is just my side of the story, so take what resonates and explore beyond if something catches your interest!
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+
+{% include 'footer.html' %}

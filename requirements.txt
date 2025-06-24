@@ -1,0 +1,5 @@
+pip freeze > requirements.txt
+# Ensure it includes:
+flask
+requests
+gunicorn

@@ -41,9 +41,6 @@ def contact():
         return render_template('contact.html', tit="Successfully sent your message")
     return render_template('contact.html', tit="Let’s Connect!")
 
-
-
-
 @app.route('/blog/<blog_id>')
 def get_post(blog_id):
     current_date = time.strftime("%Y-%m-%d")
